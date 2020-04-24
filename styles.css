@@ -1,0 +1,43 @@
+body{
+    background-image: url('images/bgimage.jpg');
+}
+
+#start{
+    text-align: center;
+    color:black;
+}
+
+.box{
+    width: 40%;
+    border: .5px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.high{
+    text-align: center;
+    color:black;
+    margin-top: 50px;
+}
+
+.set{
+    color:black;
+    width: 20%;
+    margin : 0 auto;
+    margin-top: 50px;
+}
+
+.style-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#for-label{
+    color: black;
+}
+
+#but{
+    margin-left: 67%;
+}
