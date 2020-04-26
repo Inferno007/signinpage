@@ -1,0 +1,67 @@
+.active {
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
+  background: white !important;
+  color: black;
+  position: relative;
+}
+.box1{
+  width: 100%;
+  flex-wrap: wrap;
+  align-self: stretch;
+  box-sizing: border-box;
+  height: 50px;
+}
+#box2{
+  	padding: 20px; 
+  	background: #fff;
+  	border-radius: 0 0 10px 10px;
+  	-webkit-box-shadow: none;
+  	-moz-box-shadow: none;
+  	box-shadow: none;
+    position: relative;
+}
+.outerbox{
+	width: 100%;
+	max-width: 500px;
+  	border: 0px solid gray;
+  	border-radius: 10px;
+  	box-shadow: 0px 0px 30px 0px rgba(0,0,0,.3);
+  	box-sizing: border-box;
+  	margin: 10% auto 10% auto ;
+}
+.tab-header {
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.p{
+	width: 50%;
+	float: left;
+  height: 50px;
+  background: #f9fbfb;
+}
+.tab-item-link {
+	text-decoration: none;
+  display: block;
+  color: grey;
+  font-weight: 700;
+  width:100%;
+  height: 50px;
+  line-height: 50px; 
+}
+#signup{
+	border-radius: 10px 0 0 0 ;
+}
+#login{
+	border-radius: 0 10px 0px 0px;
+}
+.p>a:hover { 
+    text-decoration: none; 
+    color: black;
+} 
+.p>a:active {
+  text-decoration: none;
+  color: black;
+}
