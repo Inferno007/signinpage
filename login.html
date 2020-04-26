@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>****</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="c.css">
 </head>
 <body>
 
-	<div id="start"><h1>Welcome to our Login Page</h1></div>
-	<div id="text"><h4>If you have an account login right awayyy or just signup now!!</h4></div>
 	<div class="outerbox">
 		<div class="box1">
 			<ul class="tab-header" role="tablist">
-				<li id="signup" class="p d-inline-flex" role="tab" >
+				<li id="signup" class="p d-inline-flex" aria-selected="false" role="tab" >
 					<a class="tab-item-link" id="auth-signup" href="signup.html">Sign up</a>
 				</li>
-				<li id="login" class="p d-inline-flex active" role="tab" >
-					<a class="tab-item-link" id="auth-login" href="#">Log in</a>
+				<li id="login" class="p d-inline-flex active" aria-selected="true" role="tab" >
+					<a class="tab-item-link" id="auth-login" href="login.html">Log in</a>
 				</li>
 			</ul>
 		</div>
@@ -24,23 +22,25 @@
 			<form  method="get">
 				<div class="form-group">
 					<label for="exampleInputEmail1">username</label>
-					
-				<input type="username" class="form-control" id="exampleInputEmail1" name="username" placeholder="Enter Username" required >
+					<input type="username" class="form-control" id="exampleInputEmail1" required >
 				 </div>
 				 <div class="form-group">
 					<label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter Password" required>
+				    <input type="password" class="form-control" id="exampleInputPassword1" required>
 				 </div>
-				 <div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+				 <div class="b">
+				 	<div class="form-group form-check f">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<label class="form-check-label" for="exampleCheck1">Remember me</label>
+				    </div>
+				    <div class="f">
+				    	<a href="#" class="right">forgot password?</a>
+					</div>
 				 </div>
-				 <button type="submit" class="btn btn-primary" id="but">Submit</button>
+				 <button type="submit" class="btn btn-primary right" id="but" >Submit</button>
 			</form>
 		</div>
-	</div>
-
-    
-    <script src="front.js"></script>
+	</div>    
+    <script src="script.js"></script>
 </body>
 </html>
