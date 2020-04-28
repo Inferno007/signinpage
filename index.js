@@ -9,6 +9,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 mongoose.connect('mongodb://localhost:27017/login_app');
+mongoose.connect('mongodb://localhost:27017/signup_app');
 app.use(express.static(__dirname));
 
 var bodyParser = require('body-parser');
@@ -22,6 +23,16 @@ var loginSchema = new mongoose.Schema({
 });
 
 var Login = mongoose.model('Login',loginSchema);
+
+var signupSchema = new mongoose.Schema({
+    username :String,
+    email : String,
+    password : String
+});
+
+var Signup = mongoose.model('Signup',signupSchema);
+
+
 
 app.get('/login.html',function(req,res){
     res.sendFile(__dirname+'/public/login.html');
@@ -46,6 +57,33 @@ app.post('/addFriend',function(req,res){
         }
     });
     res.send("Youve reached the post route");
+})
+
+app.post('/register',function(req,res){
+    var userName = req.body.username;
+    var Email = req.body.email;
+    var Password = req.body.password;
+
+    var some1= new Signup({
+        username:userName,
+        email:Email,
+        password:Password
+    })
+
+    console.log(userName);
+    console.log(Email);
+    console.log(Password);
+    some1.save(function(err,signup){
+        if(err){
+            console.log("Error in posting data of signup form");
+            console.log(err);
+        }
+        else{
+            console.log(signup);
+        }
+    })
+
+    res.send("You've reached the post route of signup ");
 })
 
 app.get('/c.css',function(req,res){
