@@ -13,12 +13,10 @@ function active1(){
 	if (y=='true'){
 		tag[1].setAttribute("aria-selected","false");
 		tag[1].classList.remove("active");
-		tag1[4].classList.add("hidden");
-		tag1[0].classList.add("hidden");
+		document.querySelectorAll("#exampleusername")[0].setAttribute("placeholder","First and Last Name");
+		tag1[0].classList.remove("hidden");
 		tag1[1].classList.add("hidden");
-		tag1[5].classList.remove("hidden");
 		tag1[2].classList.remove("hidden");
-		tag1[3].classList.remove("hidden");
 	}
 	if (x=='false'){
 		tag[0].setAttribute("aria-selected","true");
@@ -33,12 +31,10 @@ function active2(){
 	if (x=='true'){
 		tag[0].setAttribute("aria-selected","false");
 		tag[0].classList.remove("active");
-		tag1[5].classList.add("hidden");
-		tag1[4].classList.remove("hidden");
-		tag1[2].classList.add("hidden");
-		tag1[3].classList.add("hidden");
-		tag1[0].classList.remove("hidden");
+		document.querySelectorAll("#exampleusername")[0].setAttribute("placeholder","Username");
+		tag1[0].classList.add("hidden");
 		tag1[1].classList.remove("hidden");
+		tag1[2].classList.add("hidden");
 	}
 	if (y=='false'){
 		tag[1].setAttribute("aria-selected","true");

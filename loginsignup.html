@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>****</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="D:/meanstack\loginpage\public\c.css">
+</head>
+<body>
+
+	<div class="outerbox">
+		<div class="box1">
+			<ul class="tab-header" role="tablist">
+				<li id="signup" class="p d-inline-flex" aria-selected="false" role="tab" >
+					<a class="tab-item-link" id="auth-signup" href="#">Sign up</a>
+				</li>
+				<li id="login" class="p d-inline-flex active" aria-selected="true" role="tab" >
+					<a class="tab-item-link" id="auth-login" href="#">Log in</a>
+				</li>
+			</ul>
+		</div>
+		<div id="box2">
+			<form  method="get">
+				<div class="form-group b">
+					<div class="icon"><img class="icon1" src="D:\meanstack\icons\username.png"/></div>
+					<label for="exampleInputEmail1"></label>
+					<input type="username" class="form-control noleftborder" id="exampleusername" placeholder="Username" required >
+				</div>
+				<div id="hide" class="form-group hidden b">
+				 	<div class="icon"><img class="icon2" src="D:\meanstack\icons\mail.png"/></div>
+					<label for="emailId"></label>
+				    <input type="email" class="form-control noleftborder" id="exampleInputEmail" name="email" placeholder="Email ID" required>
+				</div>
+				<div class="form-group b">
+					<div class="icon"><img class="icon2" src="D:\meanstack\icons\password1.png"/></div>
+					<label for="exampleInputPassword1"></label>
+				    <input type="password" class="form-control noleftborder" id="exampleInputPassword1" placeholder="Password" required>
+				</div>
+				<div id="hide" class="">
+					<div class="form-group b">
+					 	<div class="form-group form-check bottommargin">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					    	<label class="form-check-label" for="exampleCheck1">Remember me</label>
+					    </div>
+					    <div class="fp">
+					    	<a href="#" class="right">forgot password?</a>
+						</div>
+					 </div>
+					 <button type="submit" class="btn btn-primary right" id="but" >Login</button>
+				</div>
+				<div id="hide" class="hidden">
+				 	<button type="submit" class="btn btn-primary right" id="but">Create an account</button>
+				</div>
+			</form>
+		</div>
+	</div>    
+    <script src="script_1.js"></script>
+</body>
+</html>
