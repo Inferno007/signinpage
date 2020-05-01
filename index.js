@@ -41,19 +41,15 @@ app.get('/login.html',function(req,res){
 app.post('/addFriend',function(req,res){
     var userName = req.body.username;
     var Password = req.body.password;
-    var some = new Login({
-        username: userName,
-        password:Password
-    });
-    console.log(userName);
-    console.log(Password);
-    some.save(function(err,login){
-        if(err){
+    var newuser = {username:userName,password:Password};
+	console.log(newuser);
+	User.create(newuser , function(err , newlycreated){
+		if(err){
             console.log("ERRORR");
             console.log(err);
         }
         else{
-            console.log(login);
+            console.log("login");
         }
     });
     res.send("Youve reached the post route");
@@ -63,26 +59,17 @@ app.post('/register',function(req,res){
     var userName = req.body.username;
     var Email = req.body.email;
     var Password = req.body.password;
-
-    var some1= new Signup({
-        username:userName,
-        email:Email,
-        password:Password
-    })
-
-    console.log(userName);
-    console.log(Email);
-    console.log(Password);
-    some1.save(function(err,signup){
-        if(err){
+    var newuser = {username:userName,email:Email,password:Password};
+	console.log(newuser);
+	User.create(newuser , function(err , newlycreated){
+		if(err){
             console.log("Error in posting data of signup form");
             console.log(err);
         }
         else{
-            console.log(signup);
+            console.log("signup");
         }
-    })
-
+    });
     res.send("You've reached the post route of signup ");
 })
 
