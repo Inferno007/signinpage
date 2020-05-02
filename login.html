@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
+	<title>****</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="c.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
 </head>
 <body>
 
-	<div id="start"><h1>Welcome to our Login Page</h1></div>
-	<div id="text"><h4>If you have an account login right awayyy or just signup now!!</h4></div>
 	<div class="outerbox">
 		<div class="box1">
 			<ul class="tab-header" role="tablist">
-				<li id="signup" class="p d-inline-flex" role="tab" >
+				<li id="signup" class="p d-inline-flex" aria-selected="false" role="tab" >
 					<a class="tab-item-link" id="auth-signup" href="signup.html">Sign up</a>
 				</li>
-				<li id="login" class="p d-inline-flex active" role="tab" >
-					<a class="tab-item-link" id="auth-login" href="#">Log in</a>
+				<li id="login" class="p d-inline-flex active" aria-selected="true" role="tab" >
+					<a class="tab-item-link" id="auth-login" href="login.html">Log in</a>
 				</li>
 			</ul>
 		</div>
+
 		<div id="box2">
-			<form  action="/addFriend" method="POST">
-				<div class="form-group">
-					<label for="exampleInputEmail1">username</label>
-					
-				<input type="username" class="form-control" id="exampleInputEmail1" name="username" placeholder="Enter Username" required >
-				 </div>
-				 <div class="form-group">
-					<label for="exampleInputPassword1">Password</label>
-				    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Enter Password" required>
-				 </div>
-				 <div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				    <label class="form-check-label" for="exampleCheck1">Remember me</label>
-				 </div>
-				 <button type="submit" class="btn btn-primary" id="but">Submit</button>
+			<form  method="POST">
+				<div class="form-group b">
+					<div class="icon">
+						<i class="grey fitted user icon"></i>
+					</div>
+					<label for="exampleInputEmail1"></label>
+					<input type="username" class="form-control noleftborder" id="exampleInputEmail1" placeholder="username" required >
+				</div>
+				<div class="form-group b">
+					<div class="icon">
+						<i class="fitted grey lock icon"></i>
+					</div>
+					<label for="exampleInputPassword1"></label>
+				    <input type="password" class="form-control noleftborder" id="exampleInputPassword1" placeholder="password" required >
+				</div>
+				<div class="form-group b">
+				 	<div class="form-group form-check bottommargin">
+						<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				    	<label class="form-check-label" for="exampleCheck1">Remember me</label>
+				    </div>
+				    <div class="fp">
+				    	<a href="#" class="right">forgot password?
+				    	</a>
+				    </div>
+				</div>
+				<button type="submit" class="btn btn-primary right" id="but" >Login</button>
 			</form>
 		</div>
-	</div>
-
-	
-    <script src="front.js"></script>
+	</div>   
 </body>
 </html>
