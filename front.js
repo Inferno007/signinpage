@@ -8,3 +8,6 @@ document.querySelector('#auth-signup').addEventListener('click',function(){
     document.querySelector('#auth-signup').classList.add('active');
 })
 
+
+
+

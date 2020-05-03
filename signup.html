@@ -4,8 +4,11 @@
 	<title>SignUp Page</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="c.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css">
+</head>
 <body>
+
+	
+	<div id="text"><h1>Sign Up Here!</h1></div>
 	<div class="outerbox">
 		<div class="box1">
 			<ul class="tab-header" role="tablist">
@@ -18,31 +21,26 @@
 			</ul>
 		</div>
 		<div id="box2">
-			<form  method="get">
-				<div class="form-group b">
-					<div class="icon">
-						<i class="fitted grey user icon"></i>
-					</div>
-					<label for="exampleInputEmail1"></label>
-					<input type="username" class="form-control noleftborder" id="exampleInputUserName" name="username" placeholder="Enter first and last name" required >
+			<form action="/register" method="POST">
+				<div class="form-group">
+					<label for="exampleInputEmail1">FirstName & LastName</label>
+					
+				<input type="username" class="form-control" id="exampleInputUserName" name="username" placeholder="Enter first and last name" required >
 				 </div>
-				 <div class="form-group b">
-				 	<div class="icon">
-				 		<i class="fitted grey envelope icon"></i>
-				 	</div>
-					<label for="emailId"></label>
-				    <input type="email" class="form-control noleftborder" id="exampleInputEmail" name="email" placeholder="Enter Email ID" required>
+				 <div class="form-group">
+					<label for="emailId">Email</label>
+				    <input type="email" class="form-control" id="exampleInputEmail" name="email" placeholder="Enter EmailID" required>
 				 </div>
-				 <div class="form-group b">
-				 	<div class="icon">
-				 		<i class="fitted grey lock icon"></i>
-				 	</div>
-                    <label for="password"></label>
-					<input type="password" class="form-control noleftborder" id="password" placeholder="Enter Password" required>
+				 <div class="form-group">
+                    <label for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
 				 </div>
-				 <button type="submit" class="btn btn-primary right" id="but">Create an account</button>
+				 <button type="submit" class="btn btn-primary" id="but">Submit</button>
 			</form>
 		</div>
 	</div>
+
+    
+    <script src="front.js"></script>
 </body>
 </html>
