@@ -1,83 +1,119 @@
-@import "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css";
-
 .active {
-    box-shadow: 0 6px 16px 0 rgba(0,0,0,.2);
-    background: white;
-    color: black;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,.4);
+  background: white !important;
+  color: black !important;
+  position: relative;
+}
+
+input {
+  outline: none !important !important;
+}
+
+.fitted{
+  width:100%;
+  height: 100%;
+  padding: 6px 7px 6px 7px;
+  border: 0 !important;
+}
+.icon{
+  align-items: center;
+  width:30px;
+  height: 38px;
+  margin: 0;
+  border: 1px solid #ced4da;
+  border-radius: .25rem 0 0 .25rem;
+  border-right: 0px !important;
+}
+.noleftborder{
+  border-left: 0px !important;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: #ffffff !important;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,.1),
+}
+.box1{
+  width: 100%;
+  flex-wrap: wrap;
+  align-self: stretch;
+  box-sizing: border-box;
+  height: 50px;
+}
+#box2{
+  	padding: 20px; 
+  	background: #fff;
+  	border-radius: 0 0 10px 10px;
+  	-webkit-box-shadow: none;
+  	-moz-box-shadow: none;
+  	box-shadow: none;
     position: relative;
-  
-  }
-  #start{
-      text-align: center;
-  }
-  #text{
-      text-align: center;
-  }
+    overflow:hidden ;
+}
+.hidden{
+  display: none !important;
+}
+.outerbox{
+	width: 100%;
+	max-width: 500px;
+  	border: 0px solid gray;
+  	border-radius: 10px;
+  	box-shadow: 0px 0px 30px 0px rgba(0,0,0,.4);
+  	box-sizing: border-box;
+  	margin: 10% auto 10% auto ;
 
- 
-
-  .box1{
-    width: 100%;
-    flex-wrap: wrap;
-    align-self: stretch;
-    box-sizing: border-box;
+}
+.bottommargin{
+  width: 50%;
+  margin-bottom: 14px !important;
+}
+.form-check-input {
+  margin-top: .44rem !important;
+}
+.b{
+  display: flex;
+  padding-top: 20px;
+}
+.right{
+  float: right;
+}
+.form-group{
+  margin-bottom: 20px;
+}
+.tab-header {
+    margin: 0 0;
+    padding: 0;
+    text-align: center;
     height: 50px;
-  }
-  #box2{
-        padding: 20px; 
-        background: #fff;
-        border-radius: 0 0 10px 10px;
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
-        box-shadow: none;
-      position: relative;
-  }
-  .outerbox{
-      width: 100%;
-      max-width: 500px;
-        border: 0px solid gray;
-        border-radius: 10px;
-        box-shadow: 0px 0px 30px 0px rgba(0,0,0,.3);
-        box-sizing: border-box;
-        margin: 10% auto 10% auto ;
-  }
-  .tab-header {
-      margin: 0 0;
-      padding: 0;
-      text-align: center;
-      height: 50px;
-      border-radius: 10px 10px 0 0;
-  }
-  .p{
-      width: 50%;
-      float: left;
-    height: 50px;
-    background: #f9fbfb;
-  }
-  .tab-item-link {
-    text-decoration: none;
-    display: block;
-    color: grey;
-    font-weight: 700;
-    width:100%;
-    height: 50px;
-    line-height: 50px; 
-  }
-  #signup{
-      border-radius: 10px 0 0 0 ;
-  }
-  #login{
-      border-radius: 0 10px 0px 0px;
-  }
-  .p>a:hover { 
-      text-decoration: none; 
-      color: black;
-  } 
-  .p>a:active {
-    text-decoration: none;
+    border-radius: 10px 10px 0 0;
+}
+.p{
+	width: 50%;
+	float: left;
+  height: 50px;
+  background: #ffffff;
+}
+.tab-item-link {
+	text-decoration: none;
+  display: block;
+  color: grey;
+  font-weight: 700;
+  width:100%;
+  height: 50px;
+  line-height: 50px; 
+}
+#signup{
+	border-radius: 10px 0 0 0 ;
+}
+#login{
+	border-radius: 0 10px 0px 0px;
+}
+.fp{
+  width: 50%;
+  margin: 0;
+}
+.p>a:hover { 
+    text-decoration: none; 
     color: black;
-  }
-
-  #but{
-      margin-left: 84%;
-  }
+} 
+.p>a:active {
+  text-decoration: none;
+  color: black;
+}
